@@ -1,6 +1,8 @@
+
 body {
     background-color: #0F0F0F;
     color: #FFFFFF;
+    font-family: "Inter", sans-serif;
 }
 
 * {
@@ -67,30 +69,35 @@ header {
     font-family: Inter;
     font-size: 20px;
 }
-.hero_section{
+
+.hero_section {
     background-image: url(./img/man_filming1.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     width: 100%;
     display: inline-flex;
     height: 718px;
+    max-height: 37.396vw;
     align-items: center;
 }
-.title_text{
+
+.title_text {
     color: #FFF;
     font-family: Inter;
     font-size: 48px;
     font-weight: 700;
 }
-.subtext_title{
+
+.subtext_title {
     color: #FFF;
     font-family: Inter;
     font-size: 24px;
     line-height: 128.752%;
     margin-bottom: 32px;
 }
-.bottom__button__hero{
+
+.bottom__button__hero {
     display: flex;
     padding: 16px 32px;
     justify-content: center;
@@ -102,76 +109,211 @@ header {
     max-width: 241px;
 
 }
-.bottom__button__text{
+
+.bottom__button__text {
     color: var(--Neutral-White, #FFF);
     text-align: center;
     font-family: Inter;
     font-size: 20px;
 }
-.Section__2{
+
+.Section__2 {
     width: 100%;
     display: inline-flex;
     align-items: center;
 }
-.text_content_section2{
+
+.text_content_section2 {
     display: flex;
     justify-content: space-between;
     margin: 217px 0;
 }
-.text_left_inner{
+
+.text_left_inner {
     color: #FFF;
     font-family: Inter;
     font-size: 30px;
     font-weight: 600;
 }
-.text_right{
+
+.text_right {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.text_right_inner{
+
+.text_right_inner {
     color: #FFF;
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
 }
-.text_right_red{
-    color:  #DB1B23;
+
+.text_right_red {
+    color: #DB1B23;
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
 }
-.Section__3{
+
+.Section__3 {
     background-image: url(./img/Proffesional_man_filming.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     width: 100%;
     display: inline-flex;
     height: 691px;
+    max-height: 35.99vw;
     align-items: center;
 }
-.top_text{
+
+.top_text {
     color: #FFF;
     font-family: Inter;
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 48px;
 }
-.bottom_text_inner{
+
+.bottom_text_inner {
     color: #FFF;
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
 }
-.button_right{
-    margin: 187px 0;
-}
-.Section__3__content{
+
+.Section__3__content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
+.text_left_content {
+    margin-right: 24.688vw;
+}
 
+.Play_Button {
+    position: relative;
+    width: 178px;
+    height: 178px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.center_button {
+    position: relative;
+    width: 166px;
+    height: 166px;
+    background-color: #cc181e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play_icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 45px;
+    border-color: transparent transparent transparent #fff;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.pulse-ring {
+    position: absolute;
+    inset: 0;
+    background-color: #DB1B23;
+    border-radius: 50%;
+    opacity: 0;
+    transform-origin: center;
+    animation: ripple 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+
+.delay-1 {
+    animation-delay: 0s;
+}
+
+.delay-2 {
+    animation-delay: 0.5s;
+}
+
+.delay-3 {
+    animation-delay: 0.75s;
+}
+
+.delay-4 {
+    animation-delay: 1.5s;
+}
+.top_text_section4 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 150px 0 48px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.cases_list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+.cases_section {
+    width: 100%;
+}
+.case_item {
+    width: 100%;
+    min-height: 273px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.Case_image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.Case_title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Case_description {
+    color: #747474;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+}
+.button_all_projects {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+.all_projects_text {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 29px;
+    border: 1px solid #FFF;
+    padding: 16px 32px;
+}

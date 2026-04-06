@@ -13,9 +13,17 @@ function Section3() {
                                     Приятного просмотра.</h2>
                             </div>
                         </div>
-                        <a href="" className="button_right">
-                            <img src="./icons/Button_right_video.png" alt="" />
-                        </a>                        
+                        <div className="Play_Button">
+                            <div className="pulse-ring delay-1"></div>
+                            <div className="pulse-ring delay-2"></div>
+                            <div className="pulse-ring delay-3"></div>
+                            <div className="pulse-ring delay-4"></div>
+                            <a href="#" className="middle_of_button">
+                                <div className="center_button">
+                                    <div className="play_icon"></div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
