@@ -5,7 +5,7 @@ function ServiceItem({ ServiceItemData }) {
 
     const handleClick = () => {
         setIsAnimating(true);
-        setTimeout(() => setIsAnimating(false), 500); // Длительность анимации
+        setTimeout(() => setIsAnimating(false), 300); 
     };
 
     return (
@@ -16,9 +16,7 @@ function ServiceItem({ ServiceItemData }) {
                     <h2 className="service_number">{ServiceItemData.number}</h2>
                     <h3 className="service_description">{ServiceItemData.description}</h3>
                 </div>
-                <img
-                    src={ServiceItemData.image}
-                    alt=""
+                <img src={ServiceItemData.image} alt="" 
                     className={`Service_image ${isAnimating ? 'animate' : ''}`}
                     onClick={handleClick}
                 />
