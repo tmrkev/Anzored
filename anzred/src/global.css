@@ -594,9 +594,12 @@ header {
     cursor: pointer;
 }
 
+
+
 .footer_content {
     display: flex;
     flex-direction: row;
+    margin-top: 71px;
 }
 
 .contacts {

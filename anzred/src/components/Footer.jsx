@@ -1,6 +1,7 @@
 function Footer () {
     return ( 
         <section className="Footer">
+            <hr className="line_up" />
             <div className="container">
                 <div className="content">
                     <div className="footer_content">
