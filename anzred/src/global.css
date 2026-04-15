@@ -85,6 +85,7 @@ header {
     font-family: Inter;
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 32px;
 }
 
 .subtext_title {
@@ -92,7 +93,7 @@ header {
     font-family: Inter;
     font-size: 24px;
     line-height: 128.752%;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
 }
 
 .bottom__button__hero {
@@ -593,8 +594,6 @@ header {
     font-weight: 400;
     cursor: pointer;
 }
-
-
 
 .footer_content {
     display: flex;
