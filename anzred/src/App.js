@@ -6,6 +6,9 @@ import Section__3 from './components/Section__3';
 import Section__4 from './components/Section__4';
 import Section5 from './components/Section__5';
 import Section__6 from './components/Section__6';
+import Section7 from './components/Section__7';
+import Section8 from './components/Section__8';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -22,6 +25,9 @@ function App() {
       <Section__4/>
       <Section5/>
       <Section__6/>
+      <Section7/>
+      <Section8/>
+      <Footer/>
     </div>
   );
 }
