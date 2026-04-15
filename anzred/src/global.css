@@ -85,6 +85,7 @@ header {
     font-family: Inter;
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 32px;
 }
 
 .subtext_title {
@@ -92,7 +93,7 @@ header {
     font-family: Inter;
     font-size: 24px;
     line-height: 128.752%;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
 }
 
 .bottom__button__hero {
@@ -120,6 +121,7 @@ header {
     display: inline-flex;
     align-items: center;
 }
+
 
 .text_content_section2 {
     display: flex;
@@ -475,6 +477,10 @@ header {
     display: flex;
 }
 
+.number {
+    margin-right: 16px;
+}
+
 .Question_item_position {
     display: flex;
     align-items: center;
@@ -593,8 +599,6 @@ header {
     font-weight: 400;
     cursor: pointer;
 }
-
-
 
 .footer_content {
     display: flex;

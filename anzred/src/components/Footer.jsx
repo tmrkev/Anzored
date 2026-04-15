@@ -21,9 +21,9 @@ function Footer () {
                         <div className="social_media">
                             <h3 className="title_inner_footer">Подпишись</h3>
                             <div className="social_media_inner">
-                                <img className="socials" src="./icons/Instagram.svg" alt="" />
-                                <img className="socials" src="./icons/Telegram.svg" alt="" />
-                                <img className="socials" src="./icons/Linkedin.svg" alt="" />                                
+                                <img className="socials" src="./icons/instagram.svg" alt="" />
+                                <img className="socials" src="./icons/telegram.svg" alt="" />
+                                <img className="socials" src="./icons/linkedin.svg" alt="" />                                
                             </div>
                         </div>
                     </div>
