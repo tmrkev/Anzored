@@ -1,10 +1,10 @@
 function Header() {
-    return(
+    return (
         <header>
             <div className="left_part">
                 <img src="./icons/logo.svg" alt="" className="logo" />
                 <div className="links">
-                    <a href="#">Главная</a>
+                    <a href="/">Главная</a>
                     <a href="#">Услуги</a>
                     <a href="#">Курсы</a>
                     <a href="#">Проекты</a>
