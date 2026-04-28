@@ -73,10 +73,9 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
     display: inline-flex;
-    height: 718px;
-    max-height: 37.396vw;
+    width: 100vw;
+    height: 37.396vw;
     align-items: center;
 }
 
@@ -163,8 +162,7 @@ header {
     background-repeat: no-repeat;
     width: 100%;
     display: inline-flex;
-    height: 691px;
-    max-height: 35.99vw;
+    height: 35.99vw;
     align-items: center;
 }
 
@@ -537,7 +535,7 @@ header {
     font-family: Inter;
     font-size: 63px;
     font-weight: 700;
-    line-height: 77px; 
+    line-height: 77px;
     margin-bottom: 24px;
 }
 
@@ -547,7 +545,7 @@ header {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 29px; 
+    line-height: 29px;
 }
 
 .right_side_input_info {
@@ -560,7 +558,7 @@ header {
 .reg_phone,
 .reg_email {
     border-radius: 8px;
-    border: 1px solid #3D3D3D;   
+    border: 1px solid #3D3D3D;
     padding: 16px 20px;
     align-items: center;
     gap: 10px;
@@ -627,7 +625,7 @@ header {
     font-family: inter;
     font-size: 24px;
     font-weight: 400;
-    line-height: 30px; 
+    line-height: 30px;
     margin-bottom: 24px;
 }
 
@@ -637,7 +635,7 @@ header {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; 
+    line-height: 28px;
     margin-bottom: 16px;
 }
 
@@ -646,6 +644,7 @@ header {
     height: 36px;
 
 }
+
 .social_media_inner {
     display: flex;
     flex-direction: row;
