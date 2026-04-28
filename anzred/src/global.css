@@ -650,3 +650,21 @@ header {
     flex-direction: row;
     gap: 16px;
 }
+
+.proj_sec_text_inner {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.proj_sec_button {
+    border-radius: 54px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.06);
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

@@ -20,7 +20,11 @@ function project_sec_buttons_row () {
     ];
 
     return (
-    <div>
+        <div className="project_sec_buttons_row">
+            {project_sec_buttonsData.map((project_sec_buttonsData) => (
+                <project_sec_buttons key={project_sec_buttonsData.id} project_sec_buttonsData={project_sec_buttonsData} />
+            ))}
+        </div>
     )
 
 }
