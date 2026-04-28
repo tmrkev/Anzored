@@ -1,7 +1,8 @@
 import './global.css';
 import Header from './components/Header';
 
-function Courses () {
+
+function Projects () {
     return (
         <div className='page' >
             <div className='container' >
@@ -13,4 +14,4 @@ function Courses () {
     )
 }
 
-export default Courses;
+export default Projects;

@@ -9,26 +9,40 @@ import Section__6 from './components/Section__6';
 import Section7 from './components/Section__7';
 import Section8 from './components/Section__8';
 import Footer from './components/Footer';
-
+import { BrowserRouter as Router, Routes, Route } from'react-router-dom';
+import Courses from './Courses';
+import Projects from './Projects';
 
 function App() {
   return (
-    <div className='page' >
-      <div className='container' >
-        <div className='content' >
-          <Header/>
+    <Router>
+      <div className='page' >
+        <div className='container' >
+          <div className='content' >
+            <Header/>
+          </div>
         </div>
+        <Routes>
+          <Route path="/" element={
+          <>          
+          <Section__1/>
+          <Section__2/>
+          <Section__3/>
+          <Section__4/>
+          <Section5/>
+          <Section__6/>
+          <Section7/>
+          <Section8/>
+   
+          </>
+           
+          } />
+          <Route path="/courses" element={<Courses/>} />
+          <Route path= "/projects" element={<Projects/>}  />
+        </Routes>       
+        <Footer/> 
       </div>
-      <Section__1/>
-      <Section__2/>
-      <Section__3/>
-      <Section__4/>
-      <Section5/>
-      <Section__6/>
-      <Section7/>
-      <Section8/>
-      <Footer/>
-    </div>
+    </Router>
   );
 }
 

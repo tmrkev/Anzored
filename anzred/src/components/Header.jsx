@@ -1,15 +1,17 @@
 import { BrowserRouter as Router, Routes, Route, BrowserRouter, Link } from 'react-router-dom';
+import Courses from '../Courses';
+
 function Header() {
     return(
         <header>
             <div className="left_part">
                 <img src="./icons/logo.svg" alt="" className="logo" />
                 <div className="links">
-                    <a href="#">Главная</a>
-                    <a href="#">Услуги</a>
-                    <a href="#">Курсы</a>
-                    <a href="#">Проекты</a>
-                    <a href="#">Контакты</a>
+                    <Link to="/" >Главная</Link>
+                    <Link to="/" >Услуги</Link>
+                    <Link to="/Courses" >Курсы</Link>
+                    <Link to="/Projects" >Проекты</Link>
+                    <Link to="/" >Контакты</Link>
                 </div>
             </div>
             <div className="right_part">
