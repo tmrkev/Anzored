@@ -1,6 +1,7 @@
+import React, { useState } from "react";
 import ProjectSecButton from "./Project_sec_buttons";
 
-function ProjectSecButtonsRow() {
+function ProjectSecButtonsRow({ activeFilter, onFilterChange }) {
 
     const project_sec_buttonsData = [
         { id: 1, text: 'Монтажное мастерство' },
@@ -14,7 +15,12 @@ function ProjectSecButtonsRow() {
     return (
         <div className="project_sec_buttons_row">
             {project_sec_buttonsData.map((buttonData) => (
-                <ProjectSecButton key={buttonData.id} project_button_data={buttonData} />
+                <ProjectSecButton 
+                    key={buttonData.id} 
+                    project_button_data={buttonData} 
+                    isActive={activeFilter === buttonData.text}
+                    onClick={() => onFilterChange(buttonData.text)}
+                />
             ))}
         </div>
     )
@@ -22,6 +28,8 @@ function ProjectSecButtonsRow() {
 }
 
 function Modal_all_training_programs () {
+    const [activeFilter, setActiveFilter] = useState('Монтажное мастерство');
+
     return (
         <div className="modal_all_training_programs">
             <div className="modal_content">
@@ -29,11 +37,13 @@ function Modal_all_training_programs () {
                     Все программы обучения
                 </div>
                 <div className="programs_list">
-                    <ProjectSecButtonsRow />
+                    <ProjectSecButtonsRow activeFilter={activeFilter} onFilterChange={setActiveFilter} />
                 </div>
             </div>
         </div>
     )
 }
+
+
 
 export default Modal_all_training_programs;

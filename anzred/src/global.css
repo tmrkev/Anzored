@@ -681,6 +681,11 @@ header {
     cursor: pointer;
 }
 
+.proj_sec_button.active {
+    background: #DB1B23;
+    border-color: #DB1B23;
+}
+
 .modal_title {
     color: #FFF;
     font-family: Inter;
