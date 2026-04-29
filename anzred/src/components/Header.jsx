@@ -5,7 +5,7 @@ function Header() {
     return (
         <header>
             <div className="left_part">
-                <img src="./icons/logo.svg" alt="" className="logo" />
+                <img src="./icons/logo.svg" alt="" className="logo" to="/" />
                 <div className="links">
                     <Link to="/" >Главная</Link>
                     <Link to="/" >Услуги</Link>

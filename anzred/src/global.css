@@ -38,6 +38,7 @@ header {
 
 .logo {
     margin-right: 70px;
+    cursor: pointer;
 }
 
 .left_part {
@@ -119,6 +120,8 @@ header {
     width: 100%;
     display: inline-flex;
     align-items: center;
+    background-image: url(../public/icons/redlines.png);
+    background-repeat: no-repeat;
 }
 
 
@@ -651,14 +654,22 @@ header {
     gap: 16px;
 }
 
-.proj_sec_text_inner {
+.project_sec_buttons_row {
+    display: flex;
+    width: 1139px;
+    gap: 16px 10px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+
+}
+
+
+
+.proj_sec_button {
     color: #FFF;
     font-family: Inter;
     font-size: 18px;
     font-weight: 400;
-}
-
-.proj_sec_button {
     border-radius: 54px;
     border: 1px solid #FFF;
     background: rgba(255, 255, 255, 0.06);
@@ -666,5 +677,21 @@ header {
     padding: 12px 24px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.modal_title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 48px 0 48px 0;
+}
+
+.modal_all_training_programs {
+    margin-top: 32px;
+    border-radius: 20px;
+    background: #161616;
+    padding: 48px 70px 63px 48px;
 }
