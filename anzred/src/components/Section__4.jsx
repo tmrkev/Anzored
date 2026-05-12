@@ -33,8 +33,8 @@ function Section4() {
                     <h2 className="top_text_section4">Проекты</h2>
                     <div className="cases_section">
                         <CasesSection />
-                        <div className="button_all_projects">
-                            <a href="#" className="all_projects_text">Все проекты</a>
+                        <div className="allProjectsTextButton">
+                            <a href="#" className="allProjectsText">Все проекты</a>
                         </div>
                     </div>
                 </div>

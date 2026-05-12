@@ -33,7 +33,6 @@ function ProjectSecButtonsRow({ activeFilter, onFilterChange }) {
             ))}
         </div>
     )
-
 }
 
 function CasesSection({ activeFilter }) {
@@ -68,16 +67,24 @@ function CasesSection({ activeFilter }) {
 
     return (
         <div className="cases_list">
-            {filteredCases.map((caseData) => (
-                <CaseItem key={caseData.id} caseData={caseData} />
+            {filteredCases.map((caseData, index) => (
+                <CaseItem
+                    key={caseData.id}
+                    caseData={caseData}
+                    style={{ animationDelay: `${index * 0.05}s` }}
+                />
             ))}
         </div>
     )
 }
 
-
 function ProjectsHeroSection() {
-    const [activeFilter, setActiveFilter] = useState('Бизнес');
+    const [activeFilter, setActiveFilter] = useState('Все проекты');
+
+    const handleFilterChange = (filtertext) => {   
+        setActiveFilter((current => current === filtertext ? 'Все проекты' : filtertext
+        ));
+    };
 
     return (
         <section className="projects_hero_section">
@@ -85,13 +92,13 @@ function ProjectsHeroSection() {
                 <div className="content">
                     <h2 style={{ marginTop: '48px' }} className="top_text_section4">Проекты</h2>
                     <div className="projects_sections">
-                        <ProjectSecButtonsRow activeFilter={activeFilter} onFilterChange={setActiveFilter} />
+                        <ProjectSecButtonsRow activeFilter={activeFilter} onFilterChange={handleFilterChange} />
                         <div className="cases_setion">
                             <CasesSection activeFilter={activeFilter} />
-                            <div className="button_all_projects" style={{ marginBottom: '150px' }}>
+                            <div className="allProjectsTextButton" style={{ marginBottom: '150px' }}>
                                 <a
                                     href="#"
-                                    className="all_projects_text"
+                                    className="allProjectsText"
                                     onClick={(e) => {
                                         e.preventDefault();
                                         setActiveFilter('Все проекты');

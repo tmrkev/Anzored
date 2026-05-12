@@ -1,13 +1,13 @@
 import './global.css';
 import Header from './components/Header';
-import Modal_all_training_programs from './components/Modal_all_training_prog';
+import Modal_all_training_programs from './components/CoursesHeroSection';
 
 function Courses () {
     return (
         <div className='page' >
             <div className='container' >
                 <div className='content' >
-                    <Modal_all_training_programs style={{margin:'0px'}} />
+                    <Modal_all_training_programs style={{ marginBottom: '0px' }} />
                 </div>
             </div>
         </div>
