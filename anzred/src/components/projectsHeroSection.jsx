@@ -81,7 +81,7 @@ function CasesSection({ activeFilter }) {
 function ProjectsHeroSection() {
     const [activeFilter, setActiveFilter] = useState('Все проекты');
 
-    const handleFilterChange = (filtertext) => {   
+    const handleFilterChange = (filtertext) => {
         setActiveFilter((current => current === filtertext ? 'Все проекты' : filtertext
         ));
     };

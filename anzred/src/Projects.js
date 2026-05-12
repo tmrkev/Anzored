@@ -1,6 +1,5 @@
 import './global.css';
-import Header from './components/Header';
-import ProjectsHeroSection from './components/Projects_hero_section';
+import ProjectsHeroSection from './components/projectsHeroSection';
 
 
 function Projects() {
