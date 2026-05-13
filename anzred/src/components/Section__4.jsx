@@ -34,7 +34,7 @@ function Section4() {
                     <div className="cases_section">
                         <CasesSection />
                         <div className="allProjectsTextButton">
-                            <a href="#" className="allProjectsText">Все проекты</a>
+                            <a href="/Projects" className="allProjectsText">Все проекты</a>
                         </div>
                     </div>
                 </div>

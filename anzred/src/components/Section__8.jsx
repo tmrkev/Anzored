@@ -17,7 +17,7 @@ function Section8() {
                             <input className="reg_phone" type="tel" placeholder="Номер телефона" />
                             <input type="email" className="reg_email" placeholder="E-mail"/>
                             <div className="button_and_policy">
-                            <a href="#" className="send_button">Отправить</a>                                
+                                <a href="#" className="send_button">Отправить</a>                         
                             </div>
                         </div>                            
                     </div>

@@ -141,11 +141,28 @@ header {
 
 }
 
+.bottom__button__hero:hover {
+    background: #AF0910;
+    border-color: #DB1B23;
+    transition: all 0.3s ease;
+}
+
+.bottom__button__hero:active {
+    background: var(--Neutral-Disabled, #EBEBEB);
+    border-color: #DB1B23;
+    transition: all 0.3s ease;
+}
+
 .bottom__button__text {
     color: var(--Neutral-White, #FFF);
     text-align: center;
     font-family: Inter;
     font-size: 20px;
+}
+
+.bottom__button__text:active {
+    color: var(--Neutral-Gray-2, #70777A);
+    transition: all 0.3s ease;
 }
 
 .Section__2 {
@@ -381,6 +398,20 @@ header {
     border: 1px solid #FFF;
     padding: 16px 32px;
     border-radius: 29px;
+}
+
+.allProjectsText:hover {
+    color: #AF0910;
+    background: #AF09101A;
+    border-color: #AF0910;
+    transition: all 0.3s ease;
+}
+
+.allProjectsText:active {
+    color: #DB1B23;
+    background: none;
+    border-color: #DB1B23;
+    transition: all 0.3s ease;
 }
 
 .Section__5 {
@@ -626,13 +657,14 @@ header {
     width: 549px;
     background: transparent;
     color: #A0A0A0;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
 }
 
-.reg_name input::placeholder,
+.reg_name::placeholder,
 .reg_phone::placeholder,
 .reg_email::placeholder {
-    color: #B8B8B8;
-    font-family: Inter;
     color: #A0A0A0;
     font-family: Inter;
     font-size: 16px;
@@ -640,10 +672,6 @@ header {
     line-height: 24px;
 }
 
-.button_and_policy {
-    display: flex;
-    margin-top: 24px;
-}
 
 .send_button {
     padding: 16px 36px;
@@ -657,6 +685,20 @@ header {
     font-weight: 400;
     cursor: pointer;
 }
+
+.send_button:hover {
+    background: #AF0910;
+    transition: all 0.3s ease;
+}
+
+.send_button:active {
+    color: #000;
+    background: var(--Neutral-Disabled, #EBEBEB);
+    transition: all 0.3s ease;
+
+}
+
+
 
 .footer_content {
     display: flex;
@@ -702,7 +744,7 @@ header {
 .socials {
     width: 36px;
     height: 36px;
-
+    cursor: pointer;
 }
 
 .social_media_inner {
@@ -738,10 +780,18 @@ header {
     cursor: pointer;
 }
 
+.proj_sec_button:hover {
+    background: #AF09101A;
+    border-color: #AF0910;
+    transition: all 0.3s ease;
+}
+
 .proj_sec_button.active {
     background: #DB1B23;
     border-color: #DB1B23;
 }
+
+
 
 .modal_title {
     color: #FFF;
