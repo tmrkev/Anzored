@@ -13,10 +13,12 @@ function Section8() {
                             вас проконсультируем.</h2>
                         </div>
                         <div className="right_side_input_info">
+                            <div className="EnterYourData">
                             <input className="reg_name" type="text" placeholder="Имя" />
                             <input className="reg_phone" type="tel" placeholder="Номер телефона" />
-                            <input type="email" className="reg_email" placeholder="E-mail"/>
-                            <div className="button_and_policy">
+                            <input type="email" className="reg_email" placeholder="E-mail"/>                                
+                            </div>
+                            <div className="send_button_and_policy">
                                 <a href="#" className="send_button">Отправить</a>                         
                             </div>
                         </div>                            

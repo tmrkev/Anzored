@@ -616,9 +616,9 @@ header {
 }
 
 .right_side_input_info {
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .left_side_text_inner_title {
@@ -639,10 +639,11 @@ header {
     line-height: 29px;
 }
 
-.right_side_input_info {
+.EnterYourData {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-bottom: 52px;
 }
 
 .reg_name,
@@ -674,10 +675,10 @@ header {
 
 
 .send_button {
+    margin-top: 32px;
     padding: 16px 36px;
     border-radius: 29px;
     background: #DB1B23;
-    border-color: 0;
     color: #FFF;
     text-align: center;
     font-family: Inter;
