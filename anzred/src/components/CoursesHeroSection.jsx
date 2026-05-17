@@ -15,9 +15,9 @@ function ProjectSecButtonsRow({ activeFilter, onFilterChange }) {
     return (
         <div className="project_sec_buttons_row">
             {project_sec_buttonsData.map((buttonData) => (
-                <ProjectSecButton 
-                    key={buttonData.id} 
-                    project_button_data={buttonData} 
+                <ProjectSecButton
+                    key={buttonData.id}
+                    project_button_data={buttonData}
                     isActive={activeFilter === buttonData.text}
                     onClick={() => onFilterChange(buttonData.text)}
                 />
@@ -27,7 +27,7 @@ function ProjectSecButtonsRow({ activeFilter, onFilterChange }) {
 
 }
 
-function Modal_all_training_programs () {
+function Modal_all_training_programs() {
     const [activeFilter, setActiveFilter] = useState('Монтажное мастерство');
 
     return (

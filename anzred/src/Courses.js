@@ -1,6 +1,6 @@
 import './global.css';
-import Header from './components/Header';
 import CoursesHeroSection from './components/CoursesHeroSection';
+import CoursesFilter from './components/CoursesFilter.jsx';
 
 function Courses() {
     return (
@@ -8,6 +8,9 @@ function Courses() {
             <div className='container' >
                 <div className='content' >
                     <CoursesHeroSection style={{ margin: '0px' }} />
+                    <div className="courses-layout">
+                        <CoursesFilter />
+                    </div>
                 </div>
             </div>
         </div>
