@@ -2,6 +2,7 @@ body {
     background-color: #0F0F0F;
     color: #FFFFFF;
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
 }
 
 * {
@@ -23,18 +24,25 @@ body {
     margin: 0 auto;
 }
 
+.HeaderMobileVersion {
+    display: none;
+}
+
+.HeaderPcVersion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 0;
+}
+
+
 .content {
     width: 100%;
     max-width: 100%;
     max-height: 100%;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 22px 0;
-}
+
 
 .logo {
     margin-right: 70px;
@@ -107,7 +115,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     display: inline-flex;
-    width: 100vw;
+    width: 100%;
     height: 37.396vw;
     align-items: center;
 }
@@ -601,24 +609,33 @@ header {
 }
 
 .Order_window {
-    width: 1216px;
-    height: 464px;
+    width: 100%;
+    max-width: 1216px;
+    min-height: 464px;
     border-radius: 24px;
     border: 1px solid #3D3D3D;
     background: #0F0F0F;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 56px 56px 56px 56px;
+    gap: 40px;
     margin: 0 auto 150px auto;
+    box-sizing: border-box;
 }
 
-.left_side_text {
-    margin: 65px 138px 0px 0px;
-}
-
-.right_side_input_info {
-    margin-top: 80px;
+.Section__8 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.Section__8 .container {
+    display: flex;
+    justify-content: center;
+}
+
+.Section__8 .left_side_text {
+    max-width: 520px;
 }
 
 .left_side_text_inner_title {
@@ -637,13 +654,27 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
+    max-width: 450px;
+}
+
+.right_side_input_info {
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 460px);
 }
 
 .EnterYourData {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 52px;
+    margin-bottom: 32px;
+}
+
+.phone_input_group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
 }
 
 .reg_name,
@@ -652,10 +683,7 @@ header {
     border-radius: 8px;
     border: 1px solid #3D3D3D;
     padding: 16px 20px;
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
-    width: 549px;
+    width: 100%;
     background: transparent;
     color: #A0A0A0;
     font-size: 16px;
@@ -673,10 +701,9 @@ header {
     line-height: 24px;
 }
 
-
 .send_button {
-    margin-top: 32px;
-    padding: 16px 36px;
+    margin-top: 16px;
+    padding: 16px 28px;
     border-radius: 29px;
     background: #DB1B23;
     color: #FFF;
@@ -685,6 +712,8 @@ header {
     font-size: 20px;
     font-weight: 400;
     cursor: pointer;
+    border: none;
+    max-width: 196px;
 }
 
 .send_button:hover {
@@ -696,8 +725,66 @@ header {
     color: #000;
     background: var(--Neutral-Disabled, #EBEBEB);
     transition: all 0.3s ease;
-
 }
+
+.consent_block {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    align-items: flex-start;
+    margin-top: 24px;
+    color: #A0A0A0;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 460px;
+}
+
+.consent_block .consent_checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid #DB1B23;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.consent_block .consent_checkbox:checked {
+    background: #DB1B23;
+    border-color: #DB1B23;
+}
+
+.consent_block .consent_checkbox:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.consent_block span {
+    display: block;
+    color: #DB1B23;
+}
+
+.consent_link {
+    color: #DB1B23;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.consent_link:hover {
+    border-bottom-color: #DB1B23;
+}
+
+
 
 
 
@@ -705,6 +792,18 @@ header {
     display: flex;
     flex-direction: row;
     margin-top: 71px;
+}
+
+.RightSideForMobile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.LeftSideForMobile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .contacts {
@@ -818,4 +917,301 @@ header {
 
 .SideBarPlacement {
     width: 282px;
+}
+
+.brdesktop {
+    display: block;
+}
+
+.brmobile {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .brdesktop {
+        display: none;
+    }
+
+    .brMobile {
+        display: block;
+    }
+
+    .HeaderPcVersion {
+        display: none;
+    }
+
+    .HeaderMobileVersion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 13px 0;
+    }
+
+    .logoMobile {
+        max-width: 150px;
+        width: auto;
+        cursor: pointer;
+    }
+
+    .burgerMobile {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .container {
+        padding: 0 24px;
+        flex-direction: column;
+    }
+
+    .hero_section {
+        height: auto;
+        min-height: 100vh;
+        background-image: url('./img/ManFilmingMobile.png');
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .title_text {
+        font-size: 26px;
+        margin-bottom: 13px;
+    }
+
+    .subtext_title {
+        font-size: 13px;
+        margin-bottom: 32px;
+    }
+
+    .Section__2 {
+        background-image: none;
+        background-position: center top;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .text_content_section2 {
+        flex-direction: column;
+        text-align: left;
+        margin: 4px 0;
+    }
+
+    .text_left_inner {
+        font-size: 24px;
+        margin-bottom: 32px;
+        font-weight: 600;
+    }
+
+    .text_right_inner {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .text_right_red {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .Section__3 {
+        background-image: url('./img/ProfManFilmingMobile.png');
+        background-position: center top;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .Section__3__content {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .text_left_content {
+        margin-bottom: 32px;
+    }
+
+    .top_text {
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+
+    .bottom_text_inner {
+        font-size: 13px;
+        line-height: 128.752%;
+    }
+
+    .Section__4 {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .top_text_section5 {
+        margin-bottom: 16px;
+    }
+
+    .section5_subtitle {
+        margin-bottom: -20px;
+
+    }
+
+    .cases_list {
+        grid-template-columns: 1fr;
+    }
+
+    .service_item_content {
+        margin: 10px 0px;
+    }
+
+    .service_number {
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 9px;
+    }
+
+    .service_description {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .Service_image {
+        width: 15px;
+        height: 15px;
+    }
+
+    .Card_member {
+        width: 154px;
+        height: 197px;
+        border-radius: 6px;
+        border: 0.533px solid #242424;
+    }
+
+    .Card_member_name {
+        font-size: 12px;
+    }
+
+    .Card_member_position {
+        font-size: 9px;
+    }
+
+    .Card_member_image {
+        width: 132px;
+        height: 134px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .Members_list {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 12px;
+    }
+
+    .Order_window {
+        width: 327px;
+        height: 708px;
+        min-height: auto;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .left_side_text_inner_title {
+        font-size: 41px;
+        line-height: 51.5px;
+    }
+
+    .teft_side_text_inner_subtitle {
+        display: block;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    .reg_name,
+    .reg_phone,
+    .reg_email {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .send_button {
+        width: 100%;
+        max-width: 279px;
+    }
+
+    .phone_input_group {
+        width: 100%;
+    }
+
+    .phone_input_group .reg_phone {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .consent_block {
+        grid-template-columns: auto 1fr;
+        align-items: flex-start;
+    }
+
+    .consent_block span {
+        display: block;
+    }
+
+    .footer_content {
+        display: flex;
+        justify-content: space-around;
+
+        gap: 24px;
+    }
+
+    .RightSideForMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .RightSideForMobile {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        text-align: start;
+        gap: 54px;
+
+    }
+
+    .title_inner_footer_sub{
+        display: none;
+    }
+    .title_inner_footer {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .rest_of_text_footer {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .logo_side {
+        margin-right: 0px;
+    }
+    .contacts  {
+        margin-right: 0px;
+    }
+    .where_find {
+        margin-right: 0px;
+    }
+    .LeftSideForMobile {
+        align-items: flex-start;
+        text-align: start;
+        gap: 12px;
+    }
+
+
 }
