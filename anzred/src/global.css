@@ -1050,6 +1050,11 @@ body {
         height: auto;
         min-height: 100vh;
     }
+    
+    .top_text_section4 {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
 
     .top_text_section5 {
         margin-bottom: 16px;
@@ -1110,6 +1115,14 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         gap: 12px;
+    }
+
+    .Question_item_text_content {
+        font-size: 16px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
     }
 
     .Order_window {
