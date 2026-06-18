@@ -10,6 +10,10 @@ function Card_members_roster() {
     ];
 
 
+    
+
+
+
     return (
         <div className="Members_list">
             {CardsData.map((CardMemberData) => (
@@ -35,7 +39,7 @@ function Section6() {
                         </div>
                     </div>
                     <div className="Members_section">
-                        <Card_members_roster/>
+                        <Card_members_roster />
                     </div>
                 </div>
             </div>

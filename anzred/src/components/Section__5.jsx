@@ -16,7 +16,7 @@ function ServicesSection() {
 
 
     return (
-        <div className="srvices_list">
+        <div className="services_list">
             {servicesData.map ((ServiceItemData) => (
                 <ServiceItem key={ServiceItemData.id} ServiceItemData={ServiceItemData} />
 
