@@ -1225,6 +1225,12 @@ body {
         text-align: start;
         gap: 12px;
     }
+    /* .LeftSideForMobile {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        text-align: start;
+        gap: 54px;
 
-
+    } */
 }
