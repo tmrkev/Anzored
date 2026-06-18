@@ -918,3 +918,319 @@ body {
 .SideBarPlacement {
     width: 282px;
 }
+
+.brdesktop {
+    display: block;
+}
+
+.brmobile {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .brdesktop {
+        display: none;
+    }
+
+    .brMobile {
+        display: block;
+    }
+
+    .HeaderPcVersion {
+        display: none;
+    }
+
+    .HeaderMobileVersion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 13px 0;
+    }
+
+    .logoMobile {
+        max-width: 150px;
+        width: auto;
+        cursor: pointer;
+    }
+
+    .burgerMobile {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .container {
+        padding: 0 24px;
+        flex-direction: column;
+    }
+
+    .hero_section {
+        height: auto;
+        min-height: 100vh;
+        background-image: url('./img/ManFilmingMobile.png');
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .title_text {
+        font-size: 26px;
+        margin-bottom: 13px;
+    }
+
+    .subtext_title {
+        font-size: 13px;
+        margin-bottom: 32px;
+    }
+
+    .Section__2 {
+        background-image: none;
+        background-position: center top;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .text_content_section2 {
+        flex-direction: column;
+        text-align: left;
+        margin: 4px 0;
+    }
+
+    .text_left_inner {
+        font-size: 24px;
+        margin-bottom: 32px;
+        font-weight: 600;
+    }
+
+    .text_right_inner {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .text_right_red {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .Section__3 {
+        background-image: url('./img/ProfManFilmingMobile.png');
+        background-position: center top;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .Section__3__content {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .text_left_content {
+        margin-bottom: 32px;
+    }
+
+    .top_text {
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+
+    .bottom_text_inner {
+        font-size: 13px;
+        line-height: 128.752%;
+    }
+
+    .Section__4 {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .top_text_section4 {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+
+    .top_text_section5 {
+        margin-bottom: 16px;
+    }
+
+    .section5_subtitle {
+        margin-bottom: -20px;
+
+    }
+
+    .cases_list {
+        grid-template-columns: 1fr;
+    }
+
+    .service_item_content {
+        margin: 10px 0px;
+    }
+
+    .service_number {
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 9px;
+    }
+
+    .service_description {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .Service_image {
+        width: 15px;
+        height: 15px;
+    }
+
+    .Card_member {
+        width: 154px;
+        height: 197px;
+        border-radius: 6px;
+        border: 0.533px solid #242424;
+    }
+
+    .Card_member_name {
+        font-size: 12px;
+    }
+
+    .Card_member_position {
+        font-size: 9px;
+    }
+
+    .Card_member_image {
+        width: 132px;
+        height: 134px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    .Members_list {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 12px;
+    }
+
+    .Question_item_text_content {
+        font-size: 16px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+    .Order_window {
+        width: 327px;
+        height: 708px;
+        min-height: auto;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .left_side_text_inner_title {
+        font-size: 41px;
+        line-height: 51.5px;
+    }
+
+    .teft_side_text_inner_subtitle {
+        display: block;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    .reg_name,
+    .reg_phone,
+    .reg_email {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .send_button {
+        width: 100%;
+        max-width: 279px;
+    }
+
+    .phone_input_group {
+        width: 100%;
+    }
+
+    .phone_input_group .reg_phone {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .consent_block {
+        grid-template-columns: auto 1fr;
+        align-items: flex-start;
+    }
+
+    .consent_block span {
+        display: block;
+    }
+
+    .footer_content {
+        display: flex;
+        justify-content: space-around;
+
+        gap: 24px;
+    }
+
+    .RightSideForMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .RightSideForMobile {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        text-align: start;
+        gap: 54px;
+
+    }
+
+    .title_inner_footer_sub {
+        display: none;
+    }
+
+    .title_inner_footer {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .rest_of_text_footer {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .logo_side {
+        margin-right: 0px;
+    }
+
+    .contacts {
+        margin-right: 0px;
+    }
+
+    .where_find {
+        margin-right: 0px;
+    }
+
+    .LeftSideForMobile {
+        align-items: flex-start;
+        text-align: start;
+        gap: 12px;
+    }
+
+
+}
