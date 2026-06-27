@@ -9,7 +9,7 @@ import Section__6 from './components/Section__6';
 import Section7 from './components/Section__7';
 import Section8 from './components/Section__8';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Routes, Route } from'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Courses from './Courses';
 import Projects from './Projects';
 
@@ -19,10 +19,10 @@ function App() {
       <div className='page' >
         <div className='container' >
           <div className='content' >
-            <Header/>
+            <Header />
           </div>
         </div>
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={
           <>          
           <Section__1/>
@@ -40,7 +40,7 @@ function App() {
           <Route path="/courses" element={<Courses/>} />
           <Route path= "/projects" element={<Projects/>}  />
         </Routes>       
-        <Footer/> 
+        <Footer/>  */}
       </div>
     </Router>
   );
