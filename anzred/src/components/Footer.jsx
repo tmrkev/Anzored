@@ -4,7 +4,10 @@ function Footer () {
             <hr className="line_up" />
             <div className="container">
                 <div className="content">
-                    <div className="footer_content">
+                    <div className="footer_content_desktop">
+                        
+                    </div>
+                    <div className="footer_content_mobile">
                         <div className="LefttSideForMobile">
                         <div className="logo_side">
                             <img src="./icons/logo.svg" alt="" />
@@ -28,7 +31,7 @@ function Footer () {
                                 <img className="socials" src="./icons/telegram.svg" alt="" />
                                 <img className="socials" src="./icons/linkedin.svg" alt="" />                                
                             </div>
-                        </div>                             
+                        </div>                         
                         </div>
                     </div>
                 </div>
