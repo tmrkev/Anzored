@@ -39,8 +39,8 @@ function App() {
           } />
           <Route path="/courses" element={<Courses/>} />
           <Route path= "/projects" element={<Projects/>}  />
-        </Routes>       
-        <Footer/>  */}
+        </Routes> */}      
+        <Footer/>  
       </div>
     </Router>
   );

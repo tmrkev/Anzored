@@ -931,6 +931,7 @@ body {
 
 
 
+
 @media (max-width: 768px) {
 
     .container {
@@ -941,7 +942,7 @@ body {
         padding: 0;
     }
 
-    .page {}
+    
 
     .brdesktop {
         display: none;
@@ -1237,6 +1238,8 @@ body {
         text-align: start;
         gap: 12px;
     }
-
+    .footer_content_mobile {
+        display:block;
+    }
 
 }
