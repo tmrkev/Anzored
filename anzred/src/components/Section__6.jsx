@@ -32,7 +32,6 @@ function Section6() {
               <h2 className="top_text_section6">Команда</h2>
             </div>
             
-            {/* Сам слайдер */}
             <Swiper
               spaceBetween={20}
               slidesPerView={2}
@@ -42,7 +41,6 @@ function Section6() {
                 768: { slidesPerView: 2, slidesPerGroup: 2, spaceBetween: 20 },
               }}
             >
-              {/* Рендерим ваши готовые карточки внутри слайдов */}
               {CardsData.map((memberData) => (
                 <SwiperSlide key={memberData.id}>
                   <CardMember CardMemberData={memberData} />
