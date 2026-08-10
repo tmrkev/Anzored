@@ -23,10 +23,10 @@ function Section8() {
                                 <input type="email" className="reg_email" placeholder="E-mail" />
                             </div>
                             <button type="button" className="send_button">Отправить</button>
-                            <label className="consent_block">
+                             <label className="consent_block">
                                 <input type="checkbox" className="consent_checkbox" />
                                 <span  className="consent_text" >Я согласен <a href="#" className="consent_link"> с обработкой своих персональных данных и договором публичной оферты.</a> </span>
-                            </label>
+                            </label> 
                         </div>
                     </div>
                 </div>
