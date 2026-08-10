@@ -794,14 +794,18 @@ body {
     margin-top: 71px;
 }
 
-
-.footer_content_desktop{
+.RightSideForMobile {
     display: flex;
-    margin-top: 70px;
+    align-items: center;
+    gap: 32px;
 }
-.title_inner_footer_sub{
-    margin-bottom: 24px;
+
+.LeftSideForMobile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
+
 .contacts {
     margin-right: 115px;
 }
@@ -922,10 +926,6 @@ body {
 .brmobile {
     display: none;
 }
-.footer_content_mobile{
-    
-    display: none;
-}
 
 
 
@@ -935,10 +935,11 @@ body {
 @media (max-width: 768px) {
 
     .container {
+        max-width: 327px;
         width: 100%;
         display: flex;
         margin: 0 auto;
-        padding: 0 24px;
+        padding: 0;
     }
 
     
@@ -980,7 +981,7 @@ body {
 
     .hero_section {
         height: auto;
-        padding: 115px 0px 115px 0px;
+        min-height: 100vh;
         background-image: url('./img/ManFilmingMobile.png');
         background-position: center top;
         background-size: cover;
@@ -994,25 +995,13 @@ body {
     .subtext_title {
         font-size: 13px;
         margin-bottom: 32px;
-        line-height: 16px;
-        font-weight: 300;
-
     }
 
-    .bottom__button__hero {
-        padding: 12px 24px;
-        display: block;
-        text-align: center;
-
-    }
-    .bottom__button__text {
-        font-size: 16px;
-    }
     .Section__2 {
         background-image: none;
         background-position: center top;
         height: auto;
-        padding: 48px 0px 54px;
+        min-height: 100vh;
     }
 
     .text_content_section2 {
@@ -1041,7 +1030,7 @@ body {
         background-image: url('./img/ProfManFilmingMobile.png');
         background-position: center top;
         height: auto;
-        padding: 89px 0px 83px;
+        min-height: 100vh;
     }
 
     .Section__3__content {
@@ -1059,11 +1048,6 @@ body {
         margin-bottom: 14px;
     }
 
-    .center_button{
-        width: 158px;
-        height: 158px;
-    }
-
     .bottom_text_inner {
         font-size: 13px;
         line-height: 128.752%;
@@ -1076,7 +1060,7 @@ body {
 
     .top_text_section4 {
         font-size: 24px;
-        margin: 48px 0 32px 0px;
+        margin-bottom: 14px;
     }
 
     .top_text_section5 {
@@ -1092,34 +1076,8 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .allProjectsTextButton {
-        margin: 48px 0px;
-    }
-
-    .allProjectsText {
-        font-size: 16px;
-        font-weight: 400;
-        padding: 12px 24px;
-        width: 149px;
-    }
-
-
     .service_item_content {
         margin: 10px 0px;
-    }
-
-    .Section__5{
-        margin: 0
-    }
-
-    .top_text_section5 {
-        font-size: 24px;
-        font-weight: 600;
-    }
-
-    .section5_subtitle {
-       font-size: 15px;
-        font-weight: 400;
     }
 
     .service_number {
@@ -1130,7 +1088,7 @@ body {
 
     .service_description {
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 500;
     }
 
     .Service_image {
@@ -1138,35 +1096,15 @@ body {
         height: 15px;
     }
 
-
-    .top_text_section6 {
-
-        font-size: 24px;
-        font-weight: 600;
-    }
-
-
-    .top_text_section6_content {
-        margin: 48px 0px 15px;
-}
-
-    .arrows_container_section6 {
-        display:none;
-    }
-
-
-    
     .Card_member {
         width: 154px;
         height: 197px;
         border-radius: 6px;
         border: 0.533px solid #242424;
-        padding: 10px;
     }
 
     .Card_member_name {
         font-size: 12px;
-        margin-bottom: 6px;
     }
 
     .Card_member_position {
@@ -1186,14 +1124,6 @@ body {
         gap: 12px;
     }
 
-    .QuestionsGrid {
-        margin-bottom: 48.5px;
-    }
-
-    .Question_item_position {
-        padding: 16px 0 16px 0;
-    }
-
     .Question_item_text_content {
         font-size: 16px;
         font-size: 18px;
@@ -1203,14 +1133,14 @@ body {
     }
 
     .Order_window {
+        width: 327px;
+        height: 708px;
         min-height: auto;
         flex-direction: column;
         padding: 24px;
-        margin-bottom: 70px;
     }
 
     .left_side_text_inner_title {
-        margin-top: 50px;
         font-size: 41px;
         line-height: 51.5px;
     }
@@ -1273,7 +1203,6 @@ body {
         align-items: start;
         text-align: start;
         gap: 54px;
-        margin-left: 38px;
 
     }
 
@@ -1311,10 +1240,6 @@ body {
     }
     .footer_content_mobile {
         display:block;
-        display: flex;
-        margin-top: 35px;
     }
-    .footer_content_desktop{
-    display: none;
-}
+
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Импортируем только базовые стили
+
 import 'swiper/css';
 
 const TeamCarousel = () => {
-  // Твои данные. Добавь сюда остальных членов команды
+ 
   const teamMembers = [
     { id: 1, name: 'Анзор Умаров', role: 'Генеральный Директор', img: 'путь/к/фото1.jpg' },
     { id: 2, name: 'Анзор Умаров', role: 'Генеральный Директор', img: 'путь/к/фото2.jpg' },
@@ -13,26 +13,24 @@ const TeamCarousel = () => {
   ];
 
   return (
-    // Обертка с темным фоном (цвет подберешь под свой дизайн)
+
     <div style={{ backgroundColor: '#0d0d0d', padding: '40px 20px', color: '#fff' }}>
       
       <h2 style={{ fontSize: '32px', marginBottom: '30px', fontWeight: 'bold' }}>Команда</h2>
 
       <Swiper
-        spaceBetween={20} // Расстояние между карточками (20px)
-        slidesPerView={2} // Показывать 2 карточки
-        slidesPerGroup={2} // Листать сразу по 2 карточки
-        grabCursor={true} // Показывает курсор-"руку" на ПК, намекая на свайп
+        spaceBetween={20} 
+        slidesPerView={2} 
+        slidesPerGroup={2}
+        grabCursor={true} 
         
-        // Адаптивность для телефонов
+      
         breakpoints={{
-          // На очень маленьких экранах (мобилки) лучше показывать по 1 карточке
           320: {
-            slidesPerView: 1.1, // 1 целая карточка и краешек следующей, чтобы было понятно, что можно листать
+            slidesPerView: 1.1, 
             slidesPerGroup: 1,
             spaceBetween: 15,
           },
-          // На экранах побольше (планшеты и ПК) возвращаем по 2 карточки
           768: {
             slidesPerView: 2,
             slidesPerGroup: 2,
@@ -42,9 +40,8 @@ const TeamCarousel = () => {
       >
         {teamMembers.map((member) => (
           <SwiperSlide key={member.id}>
-            {/* Сама карточка (стилизуй под свой макет) */}
             <div style={{
-              backgroundColor: '#141414', // Темно-серый фон карточки
+              backgroundColor: '#141414', 
               borderRadius: '12px',
               border: '1px solid #222',
               overflow: 'hidden',
@@ -58,7 +55,7 @@ const TeamCarousel = () => {
                 alt={member.name} 
                 style={{ 
                   width: '100%', 
-                  height: '300px', // Высота картинки
+                  height: '300px',
                   objectFit: 'cover', 
                   marginBottom: '20px' 
                 }} 

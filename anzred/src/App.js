@@ -22,7 +22,7 @@ function App() {
             <Header />
           </div>
         </div>
-        { <Routes>
+        {/* <Routes>
           <Route path="/" element={
           <>          
           <Section__1/>
@@ -39,7 +39,7 @@ function App() {
           } />
           <Route path="/courses" element={<Courses/>} />
           <Route path= "/projects" element={<Projects/>}  />
-        </Routes> }      
+        </Routes> */}      
         <Footer/>  
       </div>
     </Router>
