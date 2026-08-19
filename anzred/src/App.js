@@ -4,10 +4,10 @@ import Section__1 from './components/Section__1';
 import Section__2 from './components/Section__2';
 import Section__3 from './components/Section__3';
 import Section__4 from './components/Section__4';
-import Section5 from './components/Section__5';
+import Section__5 from './components/Section__5';
 import Section__6 from './components/Section__6';
-import Section7 from './components/Section__7';
-import Section8 from './components/Section__8';
+import Section__7 from './components/Section__7';
+import Section__8 from './components/Section__8';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Courses from './Courses';
@@ -20,27 +20,29 @@ function App() {
         <div className='container' >
           <div className='content' >
             <Header />
+
           </div>
+
         </div>
-        { <Routes>
+        {<Routes>
           <Route path="/" element={
-          <>          
-          <Section__1/>
-          <Section__2/>
-          <Section__3/>
-          <Section__4/>
-          <Section5/>
-          <Section__6/>
-          <Section7/>
-          <Section8/>
-   
-          </>
-           
+            <>
+              <div className='hr'></div>
+              <Section__1 />
+              <Section__2 />
+              <Section__3 />
+              <Section__4 />
+              <Section__5 />
+              <Section__6 />
+              <Section__7 />
+              <Section__8 />
+            </>
+
           } />
-          <Route path="/courses" element={<Courses/>} />
-          <Route path= "/projects" element={<Projects/>}  />
-        </Routes> }      
-        <Footer/>  
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>}
+        <Footer />
       </div>
     </Router>
   );

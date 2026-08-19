@@ -1,6 +1,5 @@
 import QuestionItem from "./Question_item"
 
-
 function QuestionsGrid() {
     const QuestionsData = [
         {
@@ -43,9 +42,6 @@ function QuestionsGrid() {
         </div>
     )
 }
-
-
-
 
 function Section7() {
     return (
